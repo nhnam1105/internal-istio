@@ -3,9 +3,9 @@ defaults:
   # Must be installed in a separate namespace, to minimize access to secrets.
   gateways:
     istio-ingressgateway:
-      name: istio-ingressgateway
+      name: istio-gateway
       labels:
-        app: istio-ingressgateway
+        app: istio-gateway
         istio: ingressgateway
       ports:
         ## You can add custom gateway ports in user values overrides, but it must include those ports since helm replaces.
@@ -235,7 +235,7 @@ defaults:
     caAddress: ""
 
     # Used to locate istiod.
-    istioNamespace: istio-system
+    istioNamespace: istio-ingress
 
     # Mesh ID means Mesh Identifier. It should be unique within the scope where
     # meshes will interact with each other, but it is not required to be
