@@ -7,7 +7,7 @@ defaults:
     imagePullSecrets: []
 
     # Used to locate istiod.
-    istioNamespace: istio-system-system
+    istioNamespace: istio-system
 
     externalIstiod: false
     remotePilotAddress: ""
