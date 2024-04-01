@@ -1,0 +1,7 @@
+helmCharts:
+  - name: istio-system-system
+    repo: https://istio-release.storage.googleapis.com/charts
+    version: 1.21.0
+    namespace: istio-system-system
+    releaseName: istio-system-system
+    valuesFile: values.yaml
