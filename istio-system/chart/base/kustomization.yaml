@@ -1,7 +1,7 @@
 helmCharts:
-  - name: istio-argocd-system
+  - name: istio-system
     repo: https://istio-release.storage.googleapis.com/charts
     version: 1.21.0
-    namespace: istio-argocd-system
-    releaseName: istio-argocd-system
+    namespace: istio-system
+    releaseName: istio-system
     valuesFile: values.yaml
